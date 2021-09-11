@@ -1,9 +1,11 @@
+/**
+ * @author: Carolina Rodriguez
+ */
 package Quiz3;
 
 public class DoubleEndedList {
     private Node head;
     private Node last;
-    private Node rear;
     private Node next;
 
     private int size;
@@ -11,7 +13,6 @@ public class DoubleEndedList {
     public DoubleEndedList() {
         this.head = null;
         this.last = null;
-        this.rear = null;
         this.size = 0;
     }
 
@@ -30,6 +31,7 @@ public class DoubleEndedList {
             this.head = this.last = NewNode;
         } else {
             NewNode.setNext(this.head);
+            this.head = NewNode;
         }
         this.size++;
     }
@@ -55,8 +57,15 @@ public class DoubleEndedList {
         if (isEmpty())
             System.out.println("Error");
         else {
-            this.next = this.head;
+            // this.next = this.head;
+            if (this.head == this.last) {
+                this.head = this.last = null;
 
+            } else {
+                this.head = this.head.getNext();
+                this.head.setPrev(null);
+
+            }
         }
 
         this.size--;

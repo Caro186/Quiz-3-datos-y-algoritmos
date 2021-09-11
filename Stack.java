@@ -1,4 +1,9 @@
+/**
+ * @author: Carolina Rodriguez
+ */
+
 package Quiz3;
+
 public class Stack {
     private LinkedList stackList;
 
@@ -6,6 +11,7 @@ public class Stack {
     public Stack() {
         stackList = new LinkedList();
     }
+
     public void push(Object newElement) {
         this.stackList.insertFirst(newElement);
     }
@@ -13,6 +19,7 @@ public class Stack {
     public Node pop() {
         return this.stackList.deleteFirst();
     }
+
     public Node peek() {
         return ((LinkedList) this.stackList).getHead();
     }

@@ -1,11 +1,16 @@
+/**
+ * @author: Carolina Rodriguez
+ */
 package Quiz3;
+
 public class LinkedList {
     private Node head;
-    
-    public LinkedList(Node head,int size) {
+
+    public LinkedList(Node head, int size) {
         this.head = head;
         this.size = size;
     }
+
     private int size;
 
     public LinkedList() {
@@ -16,7 +21,7 @@ public class LinkedList {
     public boolean isEmpty() {
         return this.head == null;
     }
-     
+
     public int size() {
         return this.size;
     }
@@ -49,5 +54,5 @@ public class LinkedList {
             System.out.println(current.getData());
             current = current.getNext();
         }
-}
+    }
 }

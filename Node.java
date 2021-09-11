@@ -1,3 +1,7 @@
+/**
+ * @author: Carolina Rodriguez
+ */
+
 package Quiz3;
 
 public class Node {
@@ -6,6 +10,7 @@ public class Node {
     public Object data;
     public Node last;
     private Node rear;
+    private Node Prev;
     public Node next;
 
     public Node(Object data) {
@@ -36,5 +41,13 @@ public class Node {
 
     public void setRear(Node rear) {
         this.rear = rear;
+    }
+
+    public Node getPrev() {
+        return Prev;
+    }
+
+    public void setPrev(Object Data) {
+        this.Prev = Prev;
     }
 }
