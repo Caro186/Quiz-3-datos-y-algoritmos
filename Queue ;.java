@@ -30,19 +30,25 @@ class Queue {
    public static void main(String[] args) {
       // Create an empty linked list
       Queue Q1 = new Queue();
-      Q1.Enqueue(990000);
-      Q1.Enqueue(3);
       Q1.Enqueue(5);
-      Q1.Enqueue(7);
+      Q1.Enqueue(8);
+      Q1.Enqueue(3);
+      Q1.Enqueue(12);
+      Q1.Enqueue(0);
+      Q1.Enqueue(89);
+      Q1.Enqueue(77);
+
+      System.out.println("Dequeue");
+
+      Q1.Dequeue();
+      Q1.Dequeue();
       Q1.Dequeue();
 
-      Q1.Enqueue(7777777);
-      Node head = Q1.peek();
-      Q1.displayList();
-      int element = (int) head.getData();
-      System.out.println(element);
+
    }
 
 }
 
-// Una vez realizadas las diferentes pruebas, el resultado fue el esperado.
+// Una vez realizadas las diferentes pruebas e investigaciones acerca de la dobe lista enlazada y las colas
+// se logra implementar los diferentes metodos de Enqueue,peek y Dequeu, se concluye que el
+// resultado fue el esperado.
