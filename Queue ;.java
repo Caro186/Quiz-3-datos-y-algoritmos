@@ -38,3 +38,5 @@ package Quiz3;
         }   
 
 }
+
+// Una vez realizadas las diferentes pruebas, el resultado fue el esperado.
