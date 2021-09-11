@@ -38,17 +38,22 @@ class Queue {
       Q1.Enqueue(89);
       Q1.Enqueue(77);
 
+      Q1.displayList();
+
       System.out.println("Dequeue");
 
       Q1.Dequeue();
       Q1.Dequeue();
       Q1.Dequeue();
 
+      Q1.displayList();
 
    }
 
 }
 
-// Una vez realizadas las diferentes pruebas e investigaciones acerca de la dobe lista enlazada y las colas
-// se logra implementar los diferentes metodos de Enqueue,peek y Dequeu, se concluye que el
+// Una vez realizadas las diferentes pruebas e investigaciones acerca de la dobe
+// lista enlazada y las colas
+// se logra implementar los diferentes metodos de Enqueue,peek y Dequeu, se
+// concluye que el
 // resultado fue el esperado.
